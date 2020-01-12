@@ -20,3 +20,38 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+.accent-box{
+    background-color: #EEA457;
+    padding: 20px 0px 20px 0px;
+}
+
+.classical-box{
+    background-color: #1A4270;
+    padding: 20px 0px 20px 0px;
+}
+
+.classical-box h1 {
+    color: #fff;
+}
+
+.neutral-box{
+    padding: 30px;
+}
+
+.box-energy-source > img {
+    max-height: 150px;
+    max-width: 150px;
+    margin-top: 10px;
+}
+
+.bg-footer {
+    background-color: #1A4270;
+}
+
+footer a {
+    color: aliceblue;
+}
+footer a:hover {
+    color: greenyellow;
+}
