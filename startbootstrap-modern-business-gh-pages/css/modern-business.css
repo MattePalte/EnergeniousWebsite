@@ -7,6 +7,38 @@ body {
   padding-top: 56px;
 }
 
+.masterhead h1 {
+    text-shadow: 2px 2px #fff;
+}
+
+.bg-masterhead {
+    
+  /* The image used */
+    background-image: url("/images/wallpaper.jpg");
+
+  /* Full height */
+  height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-masterhead-stadtwerke {
+    
+  /* The image used */
+    background-image: url("/images/wallpaper-stadtwerke.jpg");
+
+  /* Full height */
+  height: 700px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .carousel-item {
   height: 65vh;
   min-height: 300px;
@@ -55,3 +87,9 @@ footer a {
 footer a:hover {
     color: greenyellow;
 }
+
+.img-card {
+    max-height: 100px;
+    max-width: 100px;
+}
+
