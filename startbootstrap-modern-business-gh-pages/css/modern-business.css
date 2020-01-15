@@ -18,6 +18,9 @@ body {
 
   /* Full height */
   height: 500px;
+  
+  padding-top: 5%; 
+    
 
   /* Center and scale the image nicely */
   background-position: top;
@@ -32,6 +35,9 @@ body {
 
   /* Full height */
   height: 700px;
+    
+padding-top: 10%;
+    padding-right: 40%;
 
   /* Center and scale the image nicely */
   background-position: center;
