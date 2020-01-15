@@ -1,75 +1,101 @@
 /*!
- * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
- */
+* Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+* Copyright 2013-2019 Start Bootstrap
+* Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+*/
+:root {
+    --main-bg-color: #133153;
+    --soft-bg-color: #afd0d9;
+    --hot-bg-color: #ffe2c4;  
+    --environment-bg-color: #5b9bd5;
+    --accent-color: #fb3640;
+}
+
 body {
-  padding-top: 56px;
+    padding-top: 56px;
 }
 
 .masterhead h1 {
     text-shadow: 2px 2px #fff;
+    margin-top: 5%;
 }
 
 .bg-masterhead {
-    
-  /* The image used */
-    background-image: url("/images/wallpaper.jpg");
 
-  /* Full height */
-  height: 500px;
-  
-  padding-top: 5%; 
-    
+    /* The image used */
+    background-image: url("/images/wallpaper-color.jpg");
 
-  /* Center and scale the image nicely */
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+    /* Full height */
+    height: 500px;
+
+    /* Center and scale the image nicely */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg-masterhead-stadtwerke {
-    
-  /* The image used */
+
+    /* The image used */
     background-image: url("/images/wallpaper-stadtwerke.jpg");
 
-  /* Full height */
-  height: 700px;
-    
-padding-top: 10%;
+    /* Full height */
+    height: 700px;
+
+    padding-top: 10%;
     padding-right: 40%;
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.abouthead {
+    text-shadow: 2px 2px #000;
+    background-image: url(https://images.unsplash.com/photo-1578167597239-14f8fc680b6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1856&q=80); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.colorize-layer {
+    #background-color: rgba(83, 61, 19, 0.7);
+
+    width: 100%;
+    height: 100%;
 }
 
 .carousel-item {
-  height: 65vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .portfolio-item {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .accent-box{
-    background-color: #EEA457;
+    background-color: var(--hot-bg-color);
     padding: 20px 0px 20px 0px;
+    color:black;
+}
+
+
+.soft-box{
+    background-color: var(--soft-bg-color);
+    padding: 20px 0px 20px 0px;
+    color: black;
 }
 
 .classical-box{
-    background-color: #1A4270;
+    background-color: var(--main-bg-color);
     padding: 20px 0px 20px 0px;
-}
-
-.classical-box h1 {
     color: #fff;
 }
 
@@ -84,7 +110,7 @@ padding-top: 10%;
 }
 
 .bg-footer {
-    background-color: #1A4270;
+    background-color: var(--main-bg-color);
 }
 
 footer a {
@@ -99,3 +125,28 @@ footer a:hover {
     max-width: 100px;
 }
 
+.card-technical-detail {
+    margin: 10%; 
+    width:80%;
+    height:85%;
+}
+
+.card {
+    color:black;
+}
+
+/*
+Override Bootstrap colors
+*/
+.btn-primary {
+    color: #fff;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+    color: var(--accent-color);
+    font-weight: bold;    
+    background-color: #fff;
+    border-color: var(--accent-color);
+}
