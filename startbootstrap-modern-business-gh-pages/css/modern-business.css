@@ -23,7 +23,7 @@ body {
 .bg-masterhead {
 
     /* The image used */
-    background-image: url("/images/wallpaper-color.jpg");
+    background-image: url("../images/wallpaper-color.jpg");
 
     /* Full height */
     height: 500px;
@@ -37,7 +37,7 @@ body {
 .bg-masterhead-stadtwerke {
 
     /* The image used */
-    background-image: url("/images/wallpaper-stadtwerke.jpg");
+    background-image: url("../images/wallpaper-stadtwerke.jpg");
 
     /* Full height */
     height: 700px;
