@@ -3,19 +3,41 @@
 * Copyright 2013-2019 Start Bootstrap
 * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
 */
+/* COLOR 1 */
 :root {
-    --main-bg-color: #133153;
+    --main-bg-color: #133153; 
     --soft-bg-color: #afd0d9;
     --hot-bg-color: #ffe2c4;  
-    --environment-bg-color: #5b9bd5;
     --accent-color: #fb3640;
+    --text-color-on-main-bg: #fff;
+    --text-color-on-accent-color: #fff;
+    --text-color-on-soft-color: #000;
 }
+/* COLOR 2 */
+:root {
+    --main-bg-color: #046865; 
+    --soft-bg-color: #21a0a0;
+    --hot-bg-color: #ff9068;  
+    --accent-color: #fb3640;
+    --text-color-on-main-bg: #fff;
+    --text-color-on-accent-color: #fff;
+    --text-color-on-soft-color: #000;
+}
+
+
+
+body {
+    font-family: 'Catamaran', sans-serif;  
+    /*font-family: 'Catamaran', sans-serif;*/
+    /*font-family: 'Prompt', sans-serif;*/
+}
+
 
 body {
     padding-top: 56px;
 }
 
-.masterhead h1 {
+.masterhead h1, .masterhead h2 {
     text-shadow: 2px 2px #fff;
     margin-top: 5%;
 }
@@ -25,8 +47,6 @@ body {
     /* The image used */
     background-image: url("../images/wallpaper-color.jpg");
 
-    /* Full height */
-    height: 500px;
 
     /* Center and scale the image nicely */
     background-position: top;
@@ -96,7 +116,7 @@ body {
 .classical-box{
     background-color: var(--main-bg-color);
     padding: 20px 0px 20px 0px;
-    color: #fff;
+    color: var(--text-color-on-main-bg);
 }
 
 .neutral-box{
@@ -131,15 +151,38 @@ footer a:hover {
     height:85%;
 }
 
+/* ABOUT */
+.rounded-circle {
+    margin-bottom: 10px;
+}
+
+.team-member {
+    color: var(--text-color-on-soft-color);
+}
+
 .card {
     color:black;
+}
+
+/*
+value proposition header
+*/
+
+.list-block-elem {
+    padding: 7px;
+    margin:10px;
+    border-style:solid;
+    border-color: black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
 }
 
 /*
 Override Bootstrap colors
 */
 .btn-primary {
-    color: #fff;
+    color: var(--text-color-on-accent-color);
     background-color: var(--accent-color);
     border-color: var(--accent-color);
 }
@@ -147,6 +190,6 @@ Override Bootstrap colors
 .btn-primary:hover {
     color: var(--accent-color);
     font-weight: bold;    
-    background-color: #fff;
+    background-color: var(--text-color-on-accent-color);
     border-color: var(--accent-color);
 }
