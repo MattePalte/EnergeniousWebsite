@@ -6,8 +6,8 @@
 /* COLOR 1 */
 :root {
     --main-bg-color: #133153; 
-    --soft-bg-color: #afd0d9;
-    --hot-bg-color: #ffe2c4;  
+    --soft-bg-color: #afd0d9;    
+    --hot-bg-color: #ffe2c4; 
     --accent-color: #fb3640;
     --text-color-on-main-bg: #fff;
     --text-color-on-accent-color: #fff;
@@ -16,8 +16,9 @@
 /* COLOR 2 */
 :root {
     --main-bg-color: #046865; 
-    --soft-bg-color: #21a0a0;
-    --hot-bg-color: #ff9068;  
+    --soft-bg-color: #8aa7a7;
+    --hot-bg-color: #ffe2c4;  
+    /* too colorful --hot-bg-color: #ff9068;  */
     --accent-color: #fb3640;
     --text-color-on-main-bg: #fff;
     --text-color-on-accent-color: #fff;
@@ -160,6 +161,34 @@ footer a:hover {
     color: var(--text-color-on-soft-color);
 }
 
+.team-member:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.img__description {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background: rgba(33, 37, 41, 0.70);
+    color: #fff;
+    font-size: 18px;
+    
+    text-shadow: 1px 1px #000;
+    visibility: hidden;
+    opacity: 0;
+
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+    /* you need to match the shadow color to your background or image border for the desired effect*/
+    box-shadow: 0 0 15px 15px var(--soft-bg-color) inset;
+}
+
 .card {
     color:black;
 }
@@ -176,6 +205,10 @@ value proposition header
     border-radius: 5px;
     background-color: white;
     color: black;
+    text-align: center;
+}
+.list-block-elem>img {
+    max-height: 100px;
 }
 
 /*
